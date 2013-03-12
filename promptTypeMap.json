@@ -1,0 +1,95 @@
+{
+    "text" : {"type":"string"},
+    "integer" : {"type":"integer"},
+    "decimal" : {"type":"number"},
+    "acknowledge" : {"type":"boolean"},
+    "select_one" : {"type":"string"},
+    "select_multiple": {
+        "type": "array",
+        "isPersisted": true, 
+        "items" : {
+            "type":"string"
+        }
+    },
+    "select_one_with_other" : {"type":"string"},
+    "geopoint" : {
+        "name": "geopoint",
+    	"type": "object",
+        "elementType": "geopoint",
+        "properties": {
+            "latitude": {
+                "type": "number"
+            },
+            "longitude": {
+                "type": "number"
+            },
+            "altitude": {
+                "type": "number"
+            },
+            "accuracy": {
+                "type": "number"
+            }
+        }
+    },
+    "barcode": {"type":"string"},
+    "with_next": {"type":"string"},
+    "goto": null,
+    "label": null,
+    "screen": null,
+    "note": null,
+    "error" : null,
+    "image": {
+        "type": "object",
+        "elementType": "mimeUri",
+        "isPersisted": true,
+        "properties": {
+            "uri": {
+                "type": "string"
+            },
+            "contentType": {
+                "type": "string",
+                "default": "image/*"
+            }
+        }
+    }, 
+    "audio": {
+        "type": "object",
+        "elementType": "mimeUri",
+        "isPersisted": true,
+        "properties": {
+            "uri": {
+                "type": "string"
+            },
+            "contentType": {
+                "type": "string",
+                "default": "audio/*"
+            }
+        }
+    }, 
+    "video": {
+        "type": "object",
+        "elementType": "mimeUri",
+        "isPersisted": true,
+        "properties": {
+            "uri": {
+                "type": "string"
+            },
+            "contentType": {
+                "type": "string",
+                "default": "video/*"
+            }
+        }
+    },
+    "date": {
+        "type": "object",
+        "elementType": "date"
+    }, 
+    "time": {
+        "type": "object",
+        "elementType": "time"
+    }, 
+    "datetime": {
+        "type": "object",
+        "elementType": "dateTime"
+    }
+}
