@@ -1,3 +1,8 @@
+
+===
+This tool is deprecated. When possible use the Javascript [XLSXConverter](https://github.com/UW-ICTD/XLSXConverter) instead.
+===
+
 This is a Python script that converts XLS(X) files into JSON form defs for ODK Survey.
 The XLS(X) format is described [here](https://code.google.com/p/opendatakit/wiki/XLSForm2Docs).
 
